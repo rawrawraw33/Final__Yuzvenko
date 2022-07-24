@@ -1,0 +1,243 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  color: #E6E6F0;
+  background: #323264;
+}
+.header .container {
+  padding-top: 50px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header__actions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.header__actions__lang {
+  display: flex;
+}
+.header__actions__lang a {
+  padding: 5px 7px;
+  gap: 6px;
+  font: 700 0.857rem "Montserrat";
+  width: 33px;
+  height: 25px;
+  background: transparent;
+  border-radius: 8px;
+}
+.header__actions__lang a:hover {
+  background: #F0145A;
+  border-radius: 8px;
+}
+.header__actions__list {
+  display: flex;
+  align-items: center;
+}
+.header__actions__list-item {
+  font: 400 1.14rem "Montserrat";
+}
+.header__actions__list-item a {
+  font: 700 1.14rem "Montserrat";
+}
+.header__actions__list-item:before {
+  content: "•";
+  color: #E6E6F0;
+  font-size: 23px;
+  margin: 0 6px;
+}
+.header__actions__list-item i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.header__actions__list-item i:hover {
+  color: #F0145A;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+}
+.header a {
+  text-decoration: none;
+  font-size: 700 2.71rem/3.285rem "Montserrat";
+  color: white;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav__list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.header__nav__list li:first-child {
+  color: #F0145A;
+}
+.header__nav__list-item {
+  font: 700 1.14rem "Montserrat";
+  margin-left: 15px;
+  border-bottom: 2px solid transparent;
+}
+.header__nav__list-item:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.section-1 {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+}
+.section-1 .container {
+  position: relative;
+}
+.section-1 .container p {
+  color: #fff;
+}
+
+.symb-h {
+  position: absolute;
+}
+
+.first-content {
+  display: flex;
+  justify-content: center;
+}
+.first-content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.first-content-menu span {
+  font: 700 2.71rem/3.285rem "Montserrat";
+  color: #B3B3BA;
+}
+.first-content-text {
+  width: 581px;
+}
+.first-content-text h2 {
+  color: #fff;
+}
+
+.palka {
+  margin: 0 60px;
+  width: 4px;
+  height: 303px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.hero {
+  font: 700 2.71rem/3.285rem "Montserrat";
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cards__card {
+  width: 400px;
+}
+h1 {
+  font: 700 2.71rem/3.285rem "Montserrat";
+}
+
+h2 {
+  font: 700 2.1rem/2.64rem "Montserrat";
+}
+
+h3 {
+  font: 700 1.57rem/1.57rem "Montserrat";
+  color: #006CCF;
+}
+
+h4 {
+  font: 700 1.14rem/1.42rem "Montserrat";
+}
+
+p {
+  font: 400 1.14rem/1.85rem "Montserrat";
+}
+
+html {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}

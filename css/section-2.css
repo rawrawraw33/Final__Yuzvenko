@@ -1,0 +1,97 @@
+.section-2__circles {
+  display: flex;
+  justify-content: center;
+}
+.section-2__circles__span {
+  width: 16px;
+  height: 16px;
+  background: #24A3FF;
+  opacity: 0.2;
+  border-radius: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.section-2__circles__span:hover {
+  background: #24A3FF;
+  opacity: 1;
+}
+
+.section-2__content {
+  display: flex;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+.section-2__content__text {
+  width: 960px;
+}
+.section-2__content__img {
+  margin-right: 30px;
+}
+
+.trust {
+  text-align: center;
+  color: #323264;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.companies__company {
+  width: 25%;
+  text-align: center;
+  height: 120px;
+  overflow: hidden;
+}
+.companies__company__logo {
+  text-align: center;
+}
+
+.comp-1 {
+  background-color: #1C4280;
+}
+
+.comp-2 {
+  background-color: #143646;
+}
+
+.comp-3 {
+  background-color: #F48B30;
+}
+
+.comp-4 {
+  background-color: #9E4DC3;
+}
+
+.comp-5 {
+  background-color: #FD9339;
+}
+
+.comp-6 {
+  background-color: #E2E2E4;
+}
+
+.comp-7 {
+  background-color: #C71C36;
+}
+
+.comp-8 {
+  background-color: #DCF3F9;
+}
+
+.comp-9 {
+  background-color: #EAEAEA;
+}
+
+.comp-10 {
+  background-color: #282240;
+}
+
+.comp-11 {
+  background-color: #1D4568;
+}
+
+.comp-12 {
+  background-color: #000000;
+}

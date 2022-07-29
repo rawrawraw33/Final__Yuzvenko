@@ -1,8 +1,10 @@
 @import 'var'
 @import 'reset'
 @import 'header'
+@import 'footer'
 @import 'section-1'
 @import 'section-2'
+@import 'section-3'
 
 
 .font_hero
@@ -15,8 +17,10 @@ h3
 .font_h3-caps
     font:$font_h3-caps
     text-transform: uppercase
+    
 h4
     font:$font_h4
+    color: $color_regular
 p
     font:$font_p
 .font_ul-ol
@@ -26,12 +30,20 @@ p
 html
     font-family: 'Montserrat'
     font-size: 14px
+    background: #F5F5FA
 .container
-    max-width: 1440px
+    max-width: 1920px
     margin: 0 auto
-    padding: 0 60px
+    padding: 0 160px
 
-
+.gradient
+    
+    background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    text-fill-color: transparent
+    background-clip: text
+    
 
 
     

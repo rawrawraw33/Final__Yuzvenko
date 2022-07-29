@@ -1,3 +1,17 @@
+.section-2 {
+  background: #F5F5FA;
+}
+.section-2::before {
+  content: "";
+  width: 96%;
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: 70px;
+}
 .section-2__circles {
   display: flex;
   justify-content: center;
@@ -22,7 +36,7 @@
   border-radius: 12px;
 }
 .section-2__content__text {
-  width: 960px;
+  width: 1140px;
 }
 .section-2__content__img {
   margin-right: 30px;
@@ -37,6 +51,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1720px;
+  margin: 0 auto;
 }
 .companies__company {
   width: 25%;
@@ -50,6 +66,7 @@
 
 .comp-1 {
   background-color: #1C4280;
+  border-top-left-radius: 10px;
 }
 
 .comp-2 {
@@ -62,6 +79,7 @@
 
 .comp-4 {
   background-color: #9E4DC3;
+  border-top-right-radius: 10px;
 }
 
 .comp-5 {
@@ -82,6 +100,7 @@
 
 .comp-9 {
   background-color: #EAEAEA;
+  border-bottom-left-radius: 10px;
 }
 
 .comp-10 {
@@ -94,4 +113,5 @@
 
 .comp-12 {
   background-color: #000000;
+  border-bottom-right-radius: 10px;
 }

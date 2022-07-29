@@ -1,0 +1,51 @@
+@import 'var'
+
+.section-3
+    h3
+        font:$font_h3-caps
+
+
+    .container
+        font:$font_h3-caps
+        &::after
+            content: ''
+            height: 2px
+            background: #E6E6F0
+            width: 100%
+            display: block
+.publications
+    display: flex
+    justify-content: space-between
+    &__block
+        background-color: #fff
+        max-width: 513px
+        overflow: hidden
+        max-height: 450px
+        border-radius: 8px
+        &__text
+            padding: 30px
+            &__desc
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: #000000
+                overflow: hidden
+                
+                &::before
+                    content: ''
+                    background: #E6E6F0
+                    height: 4px
+                    width: 360px
+                    display: block
+                    margin: 15px 0
+                    
+            span
+                color: #B3B3BA
+                text-transform: uppercase
+                letter-spacing: 1px
+                line-height: 15px
+                font-size: 12px
+                font-weight: 700
+        &__img
+            text-align: center
+

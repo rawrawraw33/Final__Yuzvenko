@@ -24,20 +24,18 @@
             color: #fff
             
         h2
-            
-            cursor: pointer
-            &:hover
-                color: $color_accent
+            a
+                color: #B3B3BA
+                cursor: pointer
+                &:hover
+                    color: $color_accent
         h3
             color: $color_regular
             cursor: pointer
-            &:hover
-                color: $color_accent
-                
-        
-        
-                
-            
+            font: $font_h3-caps
+            span
+                &:hover
+                    color: $color_accent       
         
 
 .symb-h
@@ -46,6 +44,7 @@
     bottom: 0
     top: 0
     width: 872.34px
+    
 
     &-text
         color: #fff
@@ -64,8 +63,7 @@
     height: 42px
     left: calc(50% - 42px/2)
     bottom: -30px
-.cards__card__img
-
+    
 
 .first-content
     display: flex
@@ -94,18 +92,7 @@
     width: 4px
     height: 303px
     background: rgba(255, 255, 255, 0.3)
-.mb10
-    margin-bottom: 10px
-.mb15
-    margin-bottom: 15px
-.mb30
-    margin-bottom: 30px
-.mb60
-    margin-bottom: 60px
-.pb60
-    padding-bottom: 60px
-.hero
-    font: $font_hero
+
 .cards
     display: flex
     justify-content: space-between

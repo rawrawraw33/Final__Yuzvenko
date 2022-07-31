@@ -9,25 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <script src="https://kit.fontawesome.com/de7fb0a028.js" crossorigin="anonymous"></script>
-    <title>Final</title>
+    <title>Hlegal</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__logo">
-                <img class="header__img" src="./img/header_logo.png">
+                <a href=""><img class="header__img" src="./img/header_logo.png"></a>
             </div>
             <img class="symb-h" src="img/Symbol-H.png" alt="">
             <p class="symb-h-text">you legal solutions provider</p>
-            <img class="scroll" src="img/Scroll.svg">
+                <a href="#google"><img class="scroll ttu" src="img/Scroll.svg"></a>
             <div class="header__text">
                 <div class="header__actions">
                     <ul class="header__actions__lang">
-                        <span><a href="">УК</a></span>
-                        <span><a href="">РУ</a></span>
-                        <span><a href="">EN</a></span>
-                        
+                        <li><a href="">УК</a></li>
+                        <li><a href="">РУ</a></li>
+                        <li><a href="">EN</a></li>
+
                     </ul>
                     <ul class="header__actions__list">
                         <li class="header__actions__list-item">Kyiv, Mechnikova str, 14/1</li>
@@ -39,7 +43,7 @@
                     <ul class="header__nav__list">
                         <li class="header__nav__list-item"><a href="">about us</a></li>
                         <li class="header__nav__list-item"><a href="">servises</a></li>
-                        <li class="header__nav__list-item"><a href="">team</a></li>
+                        <li class="header__nav__list-item"><a href="/team page/team-page.html">team</a></li>
                         <li class="header__nav__list-item"><a href="">publications</a></li>
                         <li class="header__nav__list-item"><a href="">contact</a></li>
                     </ul>
@@ -53,23 +57,61 @@
                 
                 <div class="first-content mb30">
                     <div class="first-content-menu">
-                        <h2 class="font_hero first-content-menu-title mb30 gradient">Consistent</h2>
-                        <h2 class="font_hero first-content-menu-title mb30">Customer oriented</h2>
-                        <h2 class="font_hero first-content-menu-title mb30">Innovative</h2>
-                        <h2 class="font_hero first-content-menu-title">Business oriented</h2>
+                        <h2 class="font_hero first-content-menu-title mb30 gradient"><a>Consistent</a></h2>
+                        <h2 class="font_hero first-content-menu-title mb30"><a href="">Customer oriented</a></h2>
+                        <h2 class="font_hero first-content-menu-title mb30"><a href="">Innovative</a></h2>
+                        <h2 class="font_hero first-content-menu-title"><a href="">Business oriented</a></h2>
                     </div>
                     <div class="palka"></div>
                     <div class="first-content-text">
                         <h2 class="first-content-text-title mb30">We turn the idea of legal services</h2>
-                        <p class="first-content-text-desc">
+                        <p class="first-content-text-desc tab-content">
                             Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
                         </p>
                     </div>
+
+
+                    <div class="container-fluid">
+
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#description">Описание</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#characteristics">Характеристики</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#opinion">Отзывы</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content p-3">
+                          <div class="tab-pane fade show active" id="description">
+                            <h2 class="h4 mb-3">Описание товара</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, in et nulla impedit, mollitia eos quae inventore, minus molestiae est consequuntur nobis similique repudiandae reprehenderit fugit cumque voluptatum laudantium tempore.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur deleniti animi, voluptates expedita incidunt dignissimos fugiat repellendus dolorem ut corrupti sit libero nemo est iusto saepe, facilis rerum quam.</p>
+                          </div>
+                          <div class="tab-pane fade" id="characteristics">
+                            <h2 class="h4 mb-3">Характеристики товара</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae soluta qui labore quas repudiandae illum dolore eum incidunt, quam aut perferendis autem iusto repellat ut nesciunt ullam dignissimos recusandae quo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque incidunt modi quam laboriosam velit sit corporis veritatis optio voluptatum, officia quis quas debitis, commodi nisi, reprehenderit ratione nesciunt asperiores.</p>
+                          </div>
+                          <div class="tab-pane fade" id="opinion">
+                            <h2 class="h4 mb-3">Отзывы</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium sapiente animi suscipit magnam ex quasi nihil quas voluptas! Eius minus incidunt iure deserunt dolor praesentium. Ullam aperiam optio omnis!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, cupiditate! Aspernatur accusamus dolores tenetur iure rerum ut quibusdam nisi aliquam facilis impedit. Sed amet nemo, veniam in placeat eveniet illo!</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
                 </div>
-                <h3 class="mb10 arrow-after"><span>Services</span><img src="img/arrow.svg" alt=""></h3>
-                
+                <h3 class="mb10 arrow-after"><span>Services<i class="fa-solid fa-angle-right"></i></span></h3>
                 <h2 class="font_hero mb60 gradient">What can we do better than others?</h2>
-                <div class="cards mb60">
+                <div class="cards mb60 xs">
                     <div class="cards__card">
                         <div class="cards__card__img mb30"><img src="img/Icon--1.svg" alt=""></div>
                         <div class="cards__card__title mb15"><h3>IT and e-commerce</h3></div>
@@ -109,21 +151,44 @@
         <div class="section-2 mb60">
             <div class="container">
                 <div class="section-2__content mb30">
-                    <img class="section-2__content__img" src="img/image-face.png">
-                    <div class="section-2__content__text">
-                        <h3 class="font_h3-caps">команда</h3>
-                        <h2 class="font_hero mb30 gradient">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
-                        <h4>Олександр Олександровський</h4>
-                        <p>Керуючий партнер</p>
-                    </div>   
-                </div>
-                <div class="section-2__circles mb60">
-                    <span class="section-2__circles__span"></span>
-                    <span class="section-2__circles__span"></span>
-                    <span class="section-2__circles__span"></span>
+                    <div class="swiper mySwiper mb60">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" target="_blank"><img class="section-2__content__img" src="img/image-face.png"></a>
+                                <div class="section-2__content__text">
+                                    <h3 class="mb10 arrow-after"><span>команда<i class="fa-solid fa-angle-right"></i></span></h3>
+                                    <h2 class="font_hero mb30 gradient">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                    <h4>Олександр Олександровський</h4>
+                                    <p>Керуючий партнер</p>
+                                </div> 
+                            </div>
+                            <div class="swiper-slide"><img class="section-2__content__img" src="img/image-face.png">
+                                <div class="section-2__content__text">
+                                    <h3 class="font_h3-caps">команда</h3>
+                                    <h2 class="font_hero mb30 gradient">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                    <h4>Олександр Олександровський</h4>
+                                    <p>Керуючий партнер</p>
+                                </div> 
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="section-2__content__img" src="img/image-face.png">
+                                <div class="section-2__content__text">
+                                    <h3 class="font_h3-caps">команда</h3>
+                                    <h2 class="font_hero mb30 gradient">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                    <h4>Олександр Олександровський</h4>
+                                    <p>Керуючий партнер</p>
+                                </div> 
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        
+                    </div>
                     
+                      
                 </div>
-                <h3 class="trust font_h3-caps mb30">They already trust us</h3>
+                
+                <h3 class="trust font_h3-caps mb30" >They already trust us</h3>
             </div>
             <div class="companies">
                 <div class="companies__company comp-1">
@@ -168,7 +233,7 @@
         </div>
         <div class="section-3 ">
             <div class="container ">
-                <h3 class="font_h3-caps mb10">Publications</h3>
+                <h3 class="mb10 arrow-after mb10"><span>publications<i class="fa-solid fa-angle-right"></i></span></h3>
                 <h2 class="font_hero mb30 gradient">We have something to tell</h2> 
                 <div class="publications mb30">
                     <div class="publications__block ">
@@ -213,22 +278,33 @@
         </div>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="google">
         <div class="container">
             <div class="footer__info">
                 <div class="footer__info__addr">
-                    Kyiv, Mechnikova str, 14/1
-                    <a href="">On map</a>
+                    <span class="footer__info__addr-mech">Kyiv, Mechnikova str, 14/1</span>
+                    <span><a class="on-map" href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.436795,30.5305163,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.436795!4d30.532705?hl=ru" target="_blank">On map</a></span>
                 </div>
                 <div class="footer__info__contacts">
                     <i class="fa-brands fa-facebook"><a href=""></a></i>
-                    <a href="tel:+380800211927">0800 211 927</a>
-                    <a href="email:">contact@forstudy.space</a>
+                    <span><a href="tel:+380800211927">0800 211 927</a></span>
+                    <span><a href="mailto:contact@forstudy.space">contact@forstudy.space</a></span>
                 </div>
             </div>
             <div class="footer__roots">© 2021 HLEGAL Law company, LLC</div>
         </div>
     </footer>
-    
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true
+            },
+          });
+        </script>
 </body>
 </html>

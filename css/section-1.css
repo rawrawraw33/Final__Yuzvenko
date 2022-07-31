@@ -18,17 +18,19 @@
 .section-1 .container p {
   color: #fff;
 }
-.section-1 .container h2 {
+.section-1 .container h2 a {
+  color: #B3B3BA;
   cursor: pointer;
 }
-.section-1 .container h2:hover {
+.section-1 .container h2 a:hover {
   color: #F0145A;
 }
 .section-1 .container h3 {
   color: #24A3FF;
   cursor: pointer;
+  font: 700 1rem/1.21rem "Montserrat" uppe;
 }
-.section-1 .container h3:hover {
+.section-1 .container h3 span:hover {
   color: #F0145A;
 }
 
@@ -90,30 +92,6 @@
   width: 4px;
   height: 303px;
   background: rgba(255, 255, 255, 0.3);
-}
-
-.mb10 {
-  margin-bottom: 10px;
-}
-
-.mb15 {
-  margin-bottom: 15px;
-}
-
-.mb30 {
-  margin-bottom: 30px;
-}
-
-.mb60 {
-  margin-bottom: 60px;
-}
-
-.pb60 {
-  padding-bottom: 60px;
-}
-
-.hero {
-  font: 700 2.71rem/3.285rem "Montserrat";
 }
 
 .cards {

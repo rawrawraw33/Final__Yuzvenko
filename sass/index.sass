@@ -6,6 +6,8 @@
 @import 'section-2'
 @import 'section-3'
 
+html 
+  scroll-behavior: smooth
 
 .font_hero
     font: $font_hero
@@ -26,7 +28,9 @@ p
 .font_ul-ol
     font:$font_ul-ol
 
-
+body
+    a
+        text-decoration: none
 html
     font-family: 'Montserrat'
     font-size: 14px
@@ -43,7 +47,26 @@ html
     -webkit-text-fill-color: transparent
     text-fill-color: transparent
     background-clip: text
-    
+
+.mb10
+    margin-bottom: 10px
+.mb15
+    margin-bottom: 15px
+.mb30
+    margin-bottom: 30px
+.mb60
+    margin-bottom: 60px
+.pb60
+    padding-bottom: 60px
+.hero
+    font: $font_hero
+
+.arrow-after
+    text-transform: uppercase
+    color: $color_regular
+    cursor: pointer
+    &:hover
+        color: $color_accent
 
 
     

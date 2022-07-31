@@ -24,6 +24,7 @@
 }
 .header__actions__lang {
   display: flex;
+  z-index: 5;
 }
 .header__actions__lang a {
   padding: 5px 7px;
@@ -47,6 +48,9 @@
 }
 .header__actions__list-item a {
   font: 700 1.14rem "Montserrat";
+}
+.header__actions__list-item a:hover {
+  color: #F0145A;
 }
 .header__actions__list-item:before {
   content: "•";
@@ -78,14 +82,14 @@
   display: flex;
   margin-bottom: 30px;
 }
-.header__nav__list li:first-child {
-  color: #F0145A;
-}
 .header__nav__list-item {
   font: 700 1.14rem "Montserrat";
   margin-left: 15px;
   border-bottom: 2px solid transparent;
 }
+.header__nav__list-item a:hover {
+  color: #F0145A;
+}
 .header__nav__list-item:hover {
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #F0145A;
 }

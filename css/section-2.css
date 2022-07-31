@@ -41,6 +41,26 @@
 .section-2__content__img {
   margin-right: 30px;
 }
+.section-2__content .swiper-slide {
+  display: flex;
+}
+.section-2__content .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #24A3FF;
+  opacity: 0.2;
+  border-radius: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.section-2__content .swiper-pagination-bullet:hover {
+  background: #24A3FF;
+  opacity: 1;
+}
+.section-2__content .swiper-pagination-bullet-active {
+  background: #24A3FF;
+  opacity: 1;
+}
 
 .trust {
   text-align: center;
@@ -59,6 +79,9 @@
   text-align: center;
   height: 120px;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .companies__company__logo {
   text-align: center;

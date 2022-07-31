@@ -18,10 +18,12 @@
     justify-content: space-between
     &__block
         background-color: #fff
-        max-width: 513px
+        width: 513px
         overflow: hidden
         max-height: 450px
         border-radius: 8px
+        display: flex
+        flex-direction: column
         &__text
             padding: 30px
             &__desc
@@ -35,7 +37,7 @@
                     content: ''
                     background: #E6E6F0
                     height: 4px
-                    width: 360px
+                    width: 100%
                     display: block
                     margin: 15px 0
                     
@@ -48,4 +50,5 @@
                 font-weight: 700
         &__img
             text-align: center
+            max-width: 100%
 

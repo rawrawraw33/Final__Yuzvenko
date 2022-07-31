@@ -71,6 +71,7 @@ input {
 }
 .header__actions__lang {
   display: flex;
+  z-index: 5;
 }
 .header__actions__lang a {
   padding: 5px 7px;
@@ -94,6 +95,9 @@ input {
 }
 .header__actions__list-item a {
   font: 700 1.14rem "Montserrat";
+}
+.header__actions__list-item a:hover {
+  color: #F0145A;
 }
 .header__actions__list-item:before {
   content: "•";
@@ -125,22 +129,79 @@ input {
   display: flex;
   margin-bottom: 30px;
 }
-.header__nav__list li:first-child {
-  color: #F0145A;
-}
 .header__nav__list-item {
   font: 700 1.14rem "Montserrat";
   margin-left: 15px;
   border-bottom: 2px solid transparent;
 }
+.header__nav__list-item a:hover {
+  color: #F0145A;
+}
 .header__nav__list-item:hover {
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #F0145A;
 }
 
+.footer a {
+  font-size: 700 2.71rem/3.285rem "Montserrat";
+}
+.footer__info__addr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.footer__info__addr-mech {
+  font: 400 1.14rem "Montserrat";
+  color: #323264;
+  line-height: 20px;
+}
+.footer__info__contacts {
+  display: flex;
+  align-items: center;
+  font-weight: 700px;
+}
+.footer__info__contacts a[href="tel:"] {
+  color: #000;
+}
 .footer .container {
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+}
+.footer .container .on-map {
+  text-transform: uppercase;
+  color: #24A3FF;
+  font: 700 0.86rem "Montserrat";
+}
+.footer .container .on-map::before {
+  content: "•";
+  color: #B3B3BA;
+  font-size: 24px;
+  margin: 0 6px;
+}
+.footer .container i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.footer .container i:hover {
+  color: #F0145A;
+}
+.footer a[href^="mailto:"]::before {
+  content: "•";
+  color: #B3B3BA;
+  font-size: 24px;
+  margin: 0 6px;
+}
+.footer a[href^="mailto:"]:hover {
+  color: #F0145A;
+}
+.footer a[href^="tel:"] {
+  color: #000;
+}
+.footer a[href^="tel:"]::before {
+  content: "•";
+  color: #B3B3BA;
+  font-size: 24px;
+  margin: 0 6px;
 }
 
 .section-1 {
@@ -163,17 +224,19 @@ input {
 .section-1 .container p {
   color: #fff;
 }
-.section-1 .container h2 {
+.section-1 .container h2 a {
+  color: #B3B3BA;
   cursor: pointer;
 }
-.section-1 .container h2:hover {
+.section-1 .container h2 a:hover {
   color: #F0145A;
 }
 .section-1 .container h3 {
   color: #24A3FF;
   cursor: pointer;
+  font: 700 1rem/1.21rem "Montserrat" uppe;
 }
-.section-1 .container h3:hover {
+.section-1 .container h3 span:hover {
   color: #F0145A;
 }
 
@@ -237,30 +300,6 @@ input {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.mb10 {
-  margin-bottom: 10px;
-}
-
-.mb15 {
-  margin-bottom: 15px;
-}
-
-.mb30 {
-  margin-bottom: 30px;
-}
-
-.mb60 {
-  margin-bottom: 60px;
-}
-
-.pb60 {
-  padding-bottom: 60px;
-}
-
-.hero {
-  font: 700 2.71rem/3.285rem "Montserrat";
-}
-
 .cards {
   display: flex;
   justify-content: space-between;
@@ -322,6 +361,26 @@ input {
 .section-2__content__img {
   margin-right: 30px;
 }
+.section-2__content .swiper-slide {
+  display: flex;
+}
+.section-2__content .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #24A3FF;
+  opacity: 0.2;
+  border-radius: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.section-2__content .swiper-pagination-bullet:hover {
+  background: #24A3FF;
+  opacity: 1;
+}
+.section-2__content .swiper-pagination-bullet-active {
+  background: #24A3FF;
+  opacity: 1;
+}
 
 .trust {
   text-align: center;
@@ -340,6 +399,9 @@ input {
   text-align: center;
   height: 120px;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .companies__company__logo {
   text-align: center;
@@ -417,10 +479,12 @@ input {
 }
 .publications__block {
   background-color: #fff;
-  max-width: 513px;
+  width: 513px;
   overflow: hidden;
   max-height: 450px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .publications__block__text {
   padding: 30px;
@@ -436,7 +500,7 @@ input {
   content: "";
   background: #E6E6F0;
   height: 4px;
-  width: 360px;
+  width: 100%;
   display: block;
   margin: 15px 0;
 }
@@ -450,6 +514,11 @@ input {
 }
 .publications__block__img {
   text-align: center;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .font_hero {
@@ -483,6 +552,10 @@ p {
   font: 400 1.28rem/1.85rem "Montserrat";
 }
 
+body a {
+  text-decoration: none;
+}
+
 html {
   font-family: "Montserrat";
   font-size: 14px;
@@ -501,4 +574,37 @@ html {
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   background-clip: text;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.hero {
+  font: 700 2.71rem/3.285rem "Montserrat";
+}
+
+.arrow-after {
+  text-transform: uppercase;
+  color: #24A3FF;
+  cursor: pointer;
+}
+.arrow-after:hover {
+  color: #F0145A;
 }

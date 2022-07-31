@@ -1,16 +1,66 @@
 @import 'var'
 
 .footer
+    a
+        font-size: $font_hero
     &__info
+        &__addr
+            display: flex
+            align-items: center
+            margin-bottom: 21px
+            &-mech
+                font:400 1.14rem "Montserrat" 
+                color: $color_main
+                line-height: 20px
+        &__contacts
+            display: flex
+            align-items: center
+            font-weight: 700px
+            a[href="tel:"]
+                color: #000
+
+
+
+
+
+            
+    
         
     .container
-        
-        
         
         display: flex
         justify-content: space-between
         margin: 30px auto
-        
+        .on-map
+            text-transform: uppercase
+            color: $color_regular
+            font:700 0.86rem "Montserrat"
+            &::before
+                content: '•'
+                color: #B3B3BA
+                font-size: 24px
+                margin: 0 6px
+        i
+            font-size: 24px
+            cursor: pointer
+            &:hover
+                color: $color_accent 
+
+    a[href^="mailto:"]
+        &::before
+            content: '•'
+            color: #B3B3BA
+            font-size: 24px
+            margin: 0 6px
+        &:hover
+            color: $color_accent
+    a[href^="tel:"]
+        color: #000
+        &::before
+            content: '•'
+            color: #B3B3BA
+            font-size: 24px
+            margin: 0 6px
            
                 
                 

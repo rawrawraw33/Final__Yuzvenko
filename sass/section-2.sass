@@ -34,27 +34,33 @@
     display: flex
     background: #F5F5FA
     border-radius: 12px
+    position: relative
     &__text
         width: 1140px
     &__img
         margin-right: 30px
-    .swiper-slide
-        display: flex
-    .swiper-pagination-bullet
-        width: 16px
-        height: 16px
-        background: $color_regular
-        opacity: 0.2
-        border-radius: 100%
-        margin-right: 15px
-        cursor: pointer
-        &:hover
+    .swiper
+        position: initial
+        &-slide
+            display: flex
+            justify-content: space-between
+        &-pagination-bullet
+            width: 16px
+            height: 16px
             background: $color_regular
-            opacity: 1
-        &-active
-            background: $color_regular
-            opacity: 1
-            
+            opacity: 0.2
+            border-radius: 100%
+            margin-right: 15px
+            cursor: pointer
+            &:hover
+                background: $color_regular
+                opacity: 1
+            &-active
+                background: $color_regular
+                opacity: 1
+
+
+
 
 .trust
     text-align: center

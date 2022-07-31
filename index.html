@@ -56,52 +56,61 @@
             <div class="container">
                 
                 <div class="first-content mb30">
-                    <div class="first-content-menu">
-                        <h2 class="font_hero first-content-menu-title mb30 gradient"><a>Consistent</a></h2>
-                        <h2 class="font_hero first-content-menu-title mb30"><a href="">Customer oriented</a></h2>
-                        <h2 class="font_hero first-content-menu-title mb30"><a href="">Innovative</a></h2>
-                        <h2 class="font_hero first-content-menu-title"><a href="">Business oriented</a></h2>
-                    </div>
-                    <div class="palka"></div>
-                    <div class="first-content-text">
-                        <h2 class="first-content-text-title mb30">We turn the idea of legal services</h2>
-                        <p class="first-content-text-desc tab-content">
-                            Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                        </p>
-                    </div>
+                   
 
 
                     <div class="container-fluid">
 
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#description">Описание</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#characteristics">Характеристики</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#opinion">Отзывы</a>
-                          </li>
+                        <ul class="nav nav-tabs first-content-menu" id="product">
+                            <li class="nav-item">
+                                <a class="nav-link active font_hero first-content-menu-title mb30 gradient" data-toggle="tab" href="#tab-one">Consistent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font_hero first-content-menu-title mb30" data-toggle="tab" href="#tab-two">Customer oriented</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font_hero first-content-menu-title mb30" data-toggle="tab" href="#tab-three">Innovative</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link font_hero first-content-menu-title mb30" data-toggle="tab" href="#tab-four">Business oriented</a>
+                            </li>
                         </ul>
-                        <div class="tab-content p-3">
-                          <div class="tab-pane fade show active" id="description">
-                            <h2 class="h4 mb-3">Описание товара</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, in et nulla impedit, mollitia eos quae inventore, minus molestiae est consequuntur nobis similique repudiandae reprehenderit fugit cumque voluptatum laudantium tempore.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur deleniti animi, voluptates expedita incidunt dignissimos fugiat repellendus dolorem ut corrupti sit libero nemo est iusto saepe, facilis rerum quam.</p>
-                          </div>
-                          <div class="tab-pane fade" id="characteristics">
-                            <h2 class="h4 mb-3">Характеристики товара</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae soluta qui labore quas repudiandae illum dolore eum incidunt, quam aut perferendis autem iusto repellat ut nesciunt ullam dignissimos recusandae quo.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque incidunt modi quam laboriosam velit sit corporis veritatis optio voluptatum, officia quis quas debitis, commodi nisi, reprehenderit ratione nesciunt asperiores.</p>
-                          </div>
-                          <div class="tab-pane fade" id="opinion">
-                            <h2 class="h4 mb-3">Отзывы</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium sapiente animi suscipit magnam ex quasi nihil quas voluptas! Eius minus incidunt iure deserunt dolor praesentium. Ullam aperiam optio omnis!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, cupiditate! Aspernatur accusamus dolores tenetur iure rerum ut quibusdam nisi aliquam facilis impedit. Sed amet nemo, veniam in placeat eveniet illo!</p>
-                          </div>
+                        <div class="palka"></div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-one">
+                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
+                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                                
+                            </div>
+                            <div class="tab-pane fade " id="tab-two">
+                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
+                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                                
+                            </div>
+                            <div class="tab-pane fade " id="tab-three">
+                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
+                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                                
+                            </div>
+                            <div class="tab-pane fade" id="tab-four">
+                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
+                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                                
+                            </div>
                         </div>
-                      </div>
+
+                        <script>
+                            // #product a – селектор, выбирающий элементы a в #product (вкладки, при клике на которые нужно отображать соответствующий блок)
+                            $('#product a').click(function(e){
+                              e.preventDefault();
+                              $(this).tab('show');
+                            });
+                        </script>
+
+                    </div>
+
+                    
+
 
 
 
@@ -179,15 +188,16 @@
                                     <p>Керуючий партнер</p>
                                 </div> 
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
                         <div class="swiper-pagination"></div>
                         
                     </div>
+                    <div class="swiper-pagination"></div>
                     
                       
                 </div>
-                
+                <div class="swiper-pagination"></div>
                 <h3 class="trust font_h3-caps mb30" >They already trust us</h3>
             </div>
             <div class="companies">

@@ -76,6 +76,8 @@
         align-items: end
         &-title
             color: #B3B3BA
+            &:hover
+                color: $color_accent
         span
             font:$font_hero
             color: #B3B3BA
@@ -111,3 +113,15 @@
     background: #FFFFFF
     border-radius: 24px
     color: linear-gradient(180deg, #EF8080 0%, #F0145A 100%)
+
+
+        
+.tabs__body
+    max-width: 1360px
+.tabs__items
+    display: flex 
+.tabs__block
+    max-width: 860px
+    display: none
+    &:target
+        display: block

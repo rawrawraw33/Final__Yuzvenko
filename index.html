@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    
     <script src="https://kit.fontawesome.com/de7fb0a028.js" crossorigin="anonymous"></script>
     <title>Hlegal</title>
 </head>
@@ -43,7 +44,7 @@
                     <ul class="header__nav__list">
                         <li class="header__nav__list-item"><a href="">about us</a></li>
                         <li class="header__nav__list-item"><a href="">servises</a></li>
-                        <li class="header__nav__list-item"><a href="/team page/team-page.html">team</a></li>
+                        <li class="header__nav__list-item"><a href="team-page.html" target="_blank">team</a></li>
                         <li class="header__nav__list-item"><a href="">publications</a></li>
                         <li class="header__nav__list-item"><a href="">contact</a></li>
                     </ul>
@@ -55,59 +56,53 @@
         <div class="section-1">
             <div class="container">
                 
-                <div class="first-content mb30">
+                <div class="tabs first-content mb30">
                    
 
 
-                    <div class="container-fluid">
+                    
 
-                        <ul class="nav nav-tabs first-content-menu" id="product">
-                            <li class="nav-item">
-                                <a class="nav-link active font_hero first-content-menu-title mb30 gradient" data-toggle="tab" href="#tab-one">Consistent</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font_hero first-content-menu-title mb30" data-toggle="tab" href="#tab-two">Customer oriented</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font_hero first-content-menu-title mb30" data-toggle="tab" href="#tab-three">Innovative</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link font_hero first-content-menu-title mb30" data-toggle="tab" href="#tab-four">Business oriented</a>
-                            </li>
-                        </ul>
-                        <div class="palka"></div>
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="tab-one">
-                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
-                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                                
-                            </div>
-                            <div class="tab-pane fade " id="tab-two">
-                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
-                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                                
-                            </div>
-                            <div class="tab-pane fade " id="tab-three">
-                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
-                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                                
-                            </div>
-                            <div class="tab-pane fade" id="tab-four">
-                                <h2 class="h4 first-content-text-title mb30">We turn the idea of legal services</h2>
-                                <p class="first-content-text-desc tab-content">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                                
-                            </div>
+                    <ul class=" tabs__items  first-content-menu">
+                        <li class="tabs__item mb30">
+                            <a class="nav-link active font_hero first-content-menu-title  gradient"  href="#tab-one">Consistent</a>
+                        </li>
+                        <li class="tabs__item mb30">
+                            <a class="nav-link font_hero first-content-menu-title "  href="#tab-two">Customer oriented</a>
+                        </li>
+                        <li class=" tabs__item mb30">
+                            <a class="nav-link font_hero first-content-menu-title "  href="#tab-three">Innovative</a>
+                        </li>
+                        <li class="tabs__item  mb30">
+                            <a class="nav-link font_hero first-content-menu-title "  href="#tab-four">Business oriented</a>
+                        </li>
+                    </ul>
+                    <div class="palka"></div>
+                    <div class="tabs__body ">
+                        <div class="tabs__block active show " id="tab-one" >
+                            <h2 class=" first-content-text-title mb30">111We turn the idea of legal services</h2>
+                            <p class="first-content-text-desc ">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                            
                         </div>
-
-                        <script>
-                            // #product a – селектор, выбирающий элементы a в #product (вкладки, при клике на которые нужно отображать соответствующий блок)
-                            $('#product a').click(function(e){
-                              e.preventDefault();
-                              $(this).tab('show');
-                            });
-                        </script>
-
+                        <div class="tabs__block  " id="tab-two" >
+                            <h2 class=" first-content-text-title mb30">222We turn the idea of legal services</h2>
+                            <p class="first-content-text-desc ">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                            
+                        </div>
+                        <div class="tabs__block" id="tab-three" >
+                            <h2 class=" first-content-text-title mb30">333We turn the idea of legal services</h2>
+                            <p class="first-content-text-desc ">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                            
+                        </div>
+                        <div class="tabs__block " id="tab-four" >
+                            <h2 class=" first-content-text-title mb30">444We turn the idea of legal services</h2>
+                            <p class="first-content-text-desc ">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                            
+                        </div>
                     </div>
+
+                        
+
+                    
 
                     
 

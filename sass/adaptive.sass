@@ -1,0 +1,61 @@
+@import 'var'
+@import 'reset'
+@import 'header'
+@import 'footer'
+@import 'section-1'
+@import 'section-2'
+@import 'section-3'
+
+
+@media screen and ( max-width: $breakpoint_xl )
+    .header 
+        .container 
+            max-width: 1320px
+            background-color: #060706
+            padding: 50px 60px 0
+    .section-1
+        .container 
+            padding: 0px 60px 
+            background-color: #060706
+    .section-2
+        .container 
+            padding: 0px 60px 
+            background-color: #060706
+            .companies
+                border-radius: 0px
+                .comp-1
+                    border-top-left-radius: 0px 
+                .comp-4
+                    border-top-right-radius: 0px
+                .comp-9
+                    border-bottom-left-radius: 0px
+                .comp-12
+                    border-bottom-right-radius: 0px
+    .section-3
+        .container 
+            padding: 0px 60px 
+            background-color: #060706
+            .publications__block 
+                width: 32.3%
+    .footer
+        .container
+            max-width: 1320px
+            background-color: #060706
+            padding: 50px 60px 0
+
+
+@media screen and ( max-width: $breakpoint_md )
+    .header 
+        .container 
+            max-width: 768px
+            background-color: #43cfc6
+            padding: 50px 60px 0
+    .section-1
+        .container 
+            padding: 0px 60px 
+            background-color: #43cfc6
+    .section-2
+        .container 
+            padding: 0px 60px 
+            background-color: #43cfc6
+

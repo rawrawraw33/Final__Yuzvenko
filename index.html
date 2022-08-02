@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+        content="width=device-width,
+        user-scalable=no,
+        initial-scale=1.0" maximum-scale="1.0 , minimum-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,19 +67,20 @@
 
                     <ul class=" tabs__items  first-content-menu">
                         <li class="tabs__item mb30">
-                            <a class="nav-link active font_hero first-content-menu-title  gradient"  href="#tab-one">Consistent</a>
+                            <a class="nav-link active font_hero first-content-menu-title  gradient" onclick="changeTab(event,'tab-one')">Consistent</a>
                         </li>
                         <li class="tabs__item mb30">
-                            <a class="nav-link font_hero first-content-menu-title "  href="#tab-two">Customer oriented</a>
+                            <a class="nav-link font_hero first-content-menu-title "  onclick="changeTab(event,'tab-two')">Customer oriented</a>
                         </li>
                         <li class=" tabs__item mb30">
-                            <a class="nav-link font_hero first-content-menu-title "  href="#tab-three">Innovative</a>
+                            <a class="nav-link font_hero first-content-menu-title "  onclick="changeTab(event,'tab-three')">Innovative</a>
                         </li>
                         <li class="tabs__item  mb30">
-                            <a class="nav-link font_hero first-content-menu-title "  href="#tab-four">Business oriented</a>
+                            <a class="nav-link font_hero first-content-menu-title "  onclick="changeTab(event,'tab-four')">Business oriented</a>
                         </li>
                     </ul>
                     <div class="palka"></div>
+                    
                     <div class="tabs__body ">
                         <div class="tabs__block active show " id="tab-one" >
                             <h2 class=" first-content-text-title mb30">111We turn the idea of legal services</h2>
@@ -310,6 +314,21 @@
               clickable: true
             },
           });
+        </script>
+        <script>
+            function changeTab(evt, tabName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("tabs__block");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("nav-link");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "";
+                evt.currentTarget.className += " active";
+            }
         </script>
 </body>
 </html>

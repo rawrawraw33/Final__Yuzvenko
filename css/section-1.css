@@ -34,10 +34,6 @@
   color: #F0145A;
 }
 
-.container-fluid {
-  display: flex;
-}
-
 .symb-h {
   position: absolute;
   left: calc(50% - 436.17px + 0.17px);
@@ -120,6 +116,6 @@
   color: linear-gradient(180deg, #EF8080 0%, #F0145A 100%);
 }
 
-#tab-two, #tab-four, #tab-three {
+#tab-two, #tab-three, #tab-four {
   display: none;
 }

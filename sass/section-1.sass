@@ -100,10 +100,12 @@
     display: flex
     justify-content: space-between
     align-items: baseline
+    flex-wrap: wrap
 
 
     &__card
         max-width: 33%
+        
         &__desc
             font: $font_p
 
@@ -116,12 +118,7 @@
 
 
         
-// .tabs__body
-//     max-width: 1360px
-// .tabs__items
-//     display: flex 
-// .tabs__block
-//     max-width: 860px
-//     display: none
-//     &:target
-//         display: block
+#tab-two , #tab-four , #tab-three
+    display: none
+    &:target
+        display: block

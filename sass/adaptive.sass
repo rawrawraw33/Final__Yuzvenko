@@ -7,20 +7,17 @@
 @import 'section-3'
 
 
-@media screen and ( max-width: $breakpoint_xl )
+@media screen and ( max-width: $breakpoint_xxl )
     .header 
         .container 
             max-width: 1320px
-            background-color: #060706
             padding: 50px 60px 0
     .section-1
         .container 
             padding: 0px 60px 
-            background-color: #060706
     .section-2
         .container 
             padding: 0px 60px 
-            background-color: #060706
             .companies
                 border-radius: 0px
                 .comp-1
@@ -40,22 +37,45 @@
     .footer
         .container
             max-width: 1320px
-            background-color: #060706
             padding: 50px 60px 0
 
+@media screen and ( max-width: $breakpoint_xl )
+    .cards__card
+        max-width: 30%
 
-@media screen and ( max-width: $breakpoint_md )
+@media screen and ( max-width: $breakpoint_lg )
     .header 
         .container 
             max-width: 768px
-            background-color: #43cfc6
+            justify-content: flex-start
             padding: 50px 60px 0
+            .header
+                &__logo
+                    position: absolute
+                &__actions
+                    margin-bottom: 59px
+                &__nav
+                    justify-content: flex-start
+                
     .section-1
         .container 
             padding: 0px 60px 
-            background-color: #43cfc6
+            .cards
+                flex-wrap: wrap
+                &__card
+                    max-width: 45%
     .section-2
         .container 
             padding: 0px 60px 
-            background-color: #43cfc6
+            .swiper-slide
+                display: flex
+                flex-direction: column
+            .companies
+                &__company
+                    width: 33%
 
+
+
+@media screen and ( max-width: $breakpoint_md )
+@media screen and ( max-width: $breakpoint_sm )
+@media screen and ( max-width: $breakpoint_xs )

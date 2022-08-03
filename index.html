@@ -65,23 +65,16 @@
 
                     
 
-                    <ul class=" tabs__items  first-content-menu">
-                        <li class="tabs__item mb30">
-                            <a class="nav-link active font_hero first-content-menu-title  gradient" onclick="changeTab(event,'tab-one')">Consistent</a>
-                        </li>
-                        <li class="tabs__item mb30">
-                            <a class="nav-link font_hero first-content-menu-title "  onclick="changeTab(event,'tab-two')">Customer oriented</a>
-                        </li>
-                        <li class=" tabs__item mb30">
-                            <a class="nav-link font_hero first-content-menu-title "  onclick="changeTab(event,'tab-three')">Innovative</a>
-                        </li>
-                        <li class="tabs__item  mb30">
-                            <a class="nav-link font_hero first-content-menu-title "  onclick="changeTab(event,'tab-four')">Business oriented</a>
-                        </li>
+                    <ul class="tabs__items  first-content-menu">
+                        
+                        <button class="tabs__item  mb30 tablink font_hero first-content-menu-title" onclick="changeTab(event,'tab-one')">Consistent</button>
+                        <button class="tabs__item  mb30 tablink font_hero first-content-menu-title" onclick="changeTab(event,'tab-two')">Customer oriented</button>
+                        <button class="tabs__item  mb30 tablink font_hero first-content-menu-title" onclick="changeTab(event,'tab-three')">Innovative</button>
+                        <button class="tabs__item  mb30 tablink font_hero first-content-menu-title" onclick="changeTab(event,'tab-four')">Business oriented</button>
                     </ul>
                     <div class="palka"></div>
                     
-                    <div class="tabs__body ">
+                    
                         <div class="tabs__block active show " id="tab-one" >
                             <h2 class=" first-content-text-title mb30">111We turn the idea of legal services</h2>
                             <p class="first-content-text-desc ">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
@@ -102,22 +95,26 @@
                             <p class="first-content-text-desc ">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
                             
                         </div>
-                    </div>
-
-                        
-
                     
-
-                    
-
-
-
-
-
+                    <script>
+                        function changeTab(evt, tabName) {
+                            var i, x, tablinks;
+                            x = document.getElementsByClassName("tabs__block");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < x.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(tabName).style.display = "flex";
+                            evt.currentTarget.className += " active";
+                        }
+                    </script>
 
 
                 </div>
-                <h3 class="mb10 arrow-after"><span>Services<i class="fa-solid fa-angle-right"></i></span></h3>
+                <h3 class="mb10 arrow-after font_h3-caps"><span>Services<i class="fa-solid fa-angle-right"></i></span></h3>
                 <h2 class="font_hero mb60 gradient">What can we do better than others?</h2>
                 <div class="cards mb60">
                     <div class="cards__card mb60">
@@ -314,20 +311,6 @@
             },
           });
         </script>
-        <script>
-            function changeTab(evt, tabName) {
-                var i, x, tablinks;
-                x = document.getElementsByClassName("tabs__block");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("nav-link");
-                for (i = 0; i < x.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(tabName).style.display = "";
-                evt.currentTarget.className += " active";
-            }
-        </script>
+       
 </body>
 </html>

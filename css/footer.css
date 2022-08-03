@@ -2,59 +2,72 @@
 .footer a {
   font-size: 700 2.71rem/3.285rem "Montserrat";
 }
+
 .footer__info__addr {
   display: flex;
   align-items: center;
   margin-bottom: 21px;
 }
+
 .footer__info__addr-mech {
   font: 400 1.14rem "Montserrat";
   color: #323264;
   line-height: 20px;
 }
+
 .footer__info__contacts {
   display: flex;
   align-items: center;
   font-weight: 700px;
 }
+
 .footer__info__contacts a[href="tel:"] {
   color: #000;
 }
+
 .footer .container {
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
 }
+
 .footer .container .on-map {
   text-transform: uppercase;
   color: #24A3FF;
   font: 700 0.86rem "Montserrat";
 }
+
 .footer .container .on-map::before {
   content: "•";
   color: #B3B3BA;
   font-size: 24px;
   margin: 0 6px;
 }
+
 .footer .container i {
   font-size: 24px;
   cursor: pointer;
 }
+
 .footer .container i:hover {
   color: #F0145A;
 }
+
 .footer a[href^="mailto:"]::before {
   content: "•";
   color: #B3B3BA;
   font-size: 24px;
   margin: 0 6px;
 }
+
 .footer a[href^="mailto:"]:hover {
   color: #F0145A;
 }
+
 .footer a[href^="tel:"] {
   color: #000;
 }
+
 .footer a[href^="tel:"]::before {
   content: "•";
   color: #B3B3BA;

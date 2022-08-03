@@ -9,6 +9,7 @@
   color: #E6E6F0;
   background: #323264;
 }
+
 .header .container {
   padding-top: 50px;
   padding-bottom: 36px;
@@ -16,16 +17,19 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .header__actions {
   display: flex;
   justify-content: end;
   align-items: center;
   margin-bottom: 12px;
 }
+
 .header__actions__lang {
   display: flex;
   z-index: 5;
 }
+
 .header__actions__lang a {
   padding: 5px 7px;
   gap: 6px;
@@ -35,61 +39,76 @@
   background: transparent;
   border-radius: 8px;
 }
+
 .header__actions__lang a:hover {
   background: #F0145A;
   border-radius: 8px;
 }
+
 .header__actions__list {
   display: flex;
   align-items: center;
 }
+
 .header__actions__list-item {
   font: 400 1.14rem "Montserrat";
 }
+
 .header__actions__list-item a {
   font: 700 1.14rem "Montserrat";
 }
+
 .header__actions__list-item a:hover {
   color: #F0145A;
 }
+
 .header__actions__list-item:before {
   content: "•";
   color: #E6E6F0;
   font-size: 23px;
   margin: 0 6px;
 }
+
 .header__actions__list-item i {
   font-size: 24px;
   cursor: pointer;
 }
+
 .header__actions__list-item i:hover {
   color: #F0145A;
 }
+
 .header__text {
   display: flex;
   flex-direction: column;
 }
+
 .header a {
   text-decoration: none;
   font-size: 700 2.71rem/3.285rem "Montserrat";
   color: white;
 }
+
 .header__nav {
   display: flex;
   justify-content: flex-end;
 }
+
 .header__nav__list {
   display: flex;
   margin-bottom: 30px;
 }
+
 .header__nav__list-item {
   font: 700 1.14rem "Montserrat";
   margin-left: 15px;
   border-bottom: 2px solid transparent;
 }
+
 .header__nav__list-item a:hover {
   color: #F0145A;
 }
+
 .header__nav__list-item:hover {
   border-bottom: 2px solid #F0145A;
 }

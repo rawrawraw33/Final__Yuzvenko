@@ -4,6 +4,7 @@
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   padding-top: 895px;
 }
+
 .section-1::after {
   content: "";
   width: 98%;
@@ -15,22 +16,27 @@
   position: relative;
   bottom: -10px;
 }
+
 .section-1 .container p {
   color: #fff;
 }
+
 .section-1 .container h2 a {
   color: #B3B3BA;
   cursor: pointer;
 }
+
 .section-1 .container h2 a:hover {
   color: #F0145A;
 }
-.section-1 .container h3 {
+
+.section-1 .container h3 .font_h3-caps {
   color: #24A3FF;
   cursor: pointer;
-  font: 700 1rem/1.21rem "Montserrat" uppe;
+  font: 700 1rem/1.21rem "Montserrat" !important;
 }
-.section-1 .container h3 span:hover {
+
+.section-1 .container h3 .font_h3-caps span:hover {
   color: #F0145A;
 }
 
@@ -41,6 +47,7 @@
   top: 0;
   width: 872.34px;
 }
+
 .symb-h-text {
   color: #fff;
   font: 700 2.71rem/3.285rem "Montserrat";
@@ -65,27 +72,34 @@
   justify-content: center;
   align-items: center;
 }
+
 .first-content-menu {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
+
 .first-content-menu-title {
   color: #B3B3BA;
 }
+
 .first-content-menu-title:hover {
   color: #F0145A;
 }
+
 .first-content-menu span {
   font: 700 2.71rem/3.285rem "Montserrat";
   color: #B3B3BA;
 }
+
 .first-content-text {
   max-width: 862px;
 }
+
 .first-content-text-title {
   color: #fff;
 }
+
 .first-content-text-desc {
   font: 400 1.36rem/2.14rem "Montserrat";
 }
@@ -103,9 +117,11 @@
   align-items: baseline;
   flex-wrap: wrap;
 }
+
 .cards__card {
   max-width: 33%;
 }
+
 .cards__card__desc {
   font: 400 1.14rem/1.85rem "Montserrat";
 }
@@ -114,8 +130,4 @@
   background: #FFFFFF;
   border-radius: 24px;
   color: linear-gradient(180deg, #EF8080 0%, #F0145A 100%);
-}
-
-#tab-two, #tab-three, #tab-four {
-  display: none;
 }

@@ -114,6 +114,58 @@
 
 
                 </div>
+                <div class="exp__tabs">
+                    <ul class="exp__list">
+                        <!--				<li class="exp__item">Consistent</li>-->
+                        <!--				<li class="exp__item">Customer oriented</li>-->
+                        <!--				<li class="exp__item">Innovative</li>-->
+                        <!--				<li class="exp__item">Business oriented</li>-->
+                        <button class="exp__item tablink" onclick="changeTab(event,'consistent')">Consistent</button>
+                        <button class="exp__item tablink" onclick="changeTab(event,'customer')">Customer oriented</button>
+                        <button class="exp__item tablink" onclick="changeTab(event,'innovative')">Innovative</button>
+                        <button class="exp__item tablink" onclick="changeTab(event,'business')">Business oriented</button>
+                    </ul>
+                    <script>
+                        function changeTab(evt, tabName) {
+                            var i, x, tablinks;
+                            x = document.getElementsByClassName("exp__descr__wrapper");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < x.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(tabName).style.display = "flex";
+                            evt.currentTarget.className += " active";
+                        }
+                    </script>
+                </div>
+                <div class="divider-line"></div>
+                <div class="exp__descr__wrapper" id="consistent">
+                    <h2>We turn the idea of legal services</h2>
+                    <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and
+                        achieve a number of important decisions for the industry. Many of them form the practice of applying the
+                        law of the sea in Ukraine.</p>
+                </div>
+                <div class="exp__descr__wrapper" id="customer">
+                    <h2>Here we go with another text for customer tab</h2>
+                    <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and
+                        achieve a number of important decisions for the industry. Many of them form the practice of applying the
+                        law of the sea in Ukraine.</p>
+                </div>
+                <div class="exp__descr__wrapper" id="innovative">
+                    <h2>Here we go with another text for innovative tab</h2>
+                    <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and
+                        achieve a number of important decisions for the industry. Many of them form the practice of applying the
+                        law of the sea in Ukraine.</p>
+                </div>
+                <div class="exp__descr__wrapper" id="business">
+                    <h2>Here we go with another text for business tab</h2>
+                    <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and
+                        achieve a number of important decisions for the industry. Many of them form the practice of applying the
+                        law of the sea in Ukraine.</p>
+                </div>
                 <h3 class="mb10 arrow-after font_h3-caps"><span>Services<i class="fa-solid fa-angle-right"></i></span></h3>
                 <h2 class="font_hero mb60 gradient">What can we do better than others?</h2>
                 <div class="cards mb60">

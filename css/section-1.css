@@ -123,6 +123,3 @@
 #tab-two, #tab-four, #tab-three {
   display: none;
 }
-#tab-two:target, #tab-four:target, #tab-three:target {
-  display: block;
-}

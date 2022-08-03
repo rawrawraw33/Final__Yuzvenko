@@ -329,9 +329,6 @@ input {
 #tab-two, #tab-four, #tab-three {
   display: none;
 }
-#tab-two:target, #tab-four:target, #tab-three:target {
-  display: block;
-}
 
 .section-2 {
   background: #F5F5FA;
@@ -866,9 +863,6 @@ input {
 
 #tab-two, #tab-four, #tab-three {
   display: none;
-}
-#tab-two:target, #tab-four:target, #tab-three:target {
-  display: block;
 }
 
 .section-2 {

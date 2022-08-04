@@ -47,10 +47,15 @@
 .footer .container i {
   font-size: 24px;
   cursor: pointer;
+  color: #24A3FF;
 }
 
 .footer .container i:hover {
   color: #F0145A;
+}
+
+.footer a[href^="mailto:"] {
+  color: #24A3FF;
 }
 
 .footer a[href^="mailto:"]::before {

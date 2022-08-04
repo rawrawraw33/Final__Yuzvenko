@@ -33,7 +33,7 @@
             .font_h3-caps
                 color: $color_regular
                 cursor: pointer
-                font: $font_h3-caps !important
+                font: $font_h3-caps 
                 span
                     &:hover
                         color: $color_accent       
@@ -76,11 +76,15 @@
         align-items: end
         &-title
             color: #B3B3BA
+            background: transparent
+            border: none
+            cursor: pointer
             &:hover
                 color: $color_accent
         span
             font:$font_hero
             color: #B3B3BA
+            
     &-text
         max-width: 862px
         &-title
@@ -95,7 +99,8 @@
     width: 4px
     height: 303px
     background: rgba(255, 255, 255, 0.3)
-
+.tabs__block
+    max-width: 860px
 .cards
     display: flex
     justify-content: space-between
@@ -104,7 +109,7 @@
 
 
     &__card
-        max-width: 33%
+        max-width: 30%
         
         &__desc
             font: $font_p
@@ -117,6 +122,6 @@
     color: linear-gradient(180deg, #EF8080 0%, #F0145A 100%)
 
 
-    
-
+#tab-two , #tab-three , #tab-four
+    display: none
 

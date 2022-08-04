@@ -29,6 +29,10 @@
   flex-direction: column;
 }
 
+.publications__block a {
+  text-align: center;
+}
+
 .publications__block__text {
   padding: 30px;
 }
@@ -60,6 +64,5 @@
 }
 
 .publications__block__img {
-  text-align: center;
-  max-width: 100%;
+  width: 100%;
 }
